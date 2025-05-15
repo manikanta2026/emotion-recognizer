@@ -1,0 +1,11 @@
+numpy
+librosa
+tensorflow
+scikit-learn
+matplotlib
+soundfile
+audioread
+numba
+resampy
+flask
+flask-cors
