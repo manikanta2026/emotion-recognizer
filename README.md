@@ -23,7 +23,7 @@ Voice Vista is a deep learning-based emotion recognition system that analyzes au
 - Interactive visualizations using Chart.js
 
 ### Backend
-- Express.js server
+- Flask server
 - Python-based inference engine
 - LibROSA for audio feature extraction 
 
@@ -51,14 +51,13 @@ cd frontend
 npm install
 3. Install backend dependencies:
 cd backend
-npm install
 pip install -r requirements.txt
 4. Start the development servers:
 # Frontend
 npm run dev
 
 # Backend
-node server.js
+python app.py
 
 ## Environment Variables
 Create a `.env` file in the frontend directory:
@@ -73,7 +72,7 @@ VITE_BACKEND_URL=http://localhost:5000
 - Axios
 
 ### Backend
-- Express.js
+- Flask
 - Python 3.8+
 - TensorFlow
 - LibROSA
