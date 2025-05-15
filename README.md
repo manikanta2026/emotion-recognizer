@@ -18,9 +18,8 @@ Voice Vista is a deep learning-based emotion recognition system that analyzes au
 
 ### Frontend
 - Built with React + Vite
-- Real-time audio recording using react-media-recorder
 - File upload handling with react-dropzone
-- Interactive visualizations using Chart.js
+- Interactive visualizations 
 
 ### Backend
 - Flask server
