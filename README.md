@@ -1,74 +1,122 @@
-# Voice Vista - Emotion Recognition from Speech
+# 🎙️ Voice Vista – Emotion Recognition from Speech
 
-A web application that recognizes emotions from speech using an Artificial Neural Network (ANN) model.
+Voice Vista is an AI-powered web application that identifies human emotions from speech using a deep learning model. Whether you upload an audio file or record your voice in real-time, Voice Vista will analyze it and predict emotional states like happiness, sadness, anger, and more.
 
-## Overview
+---
 
-Voice Vista is a deep learning-based emotion recognition system that analyzes audio input to detect human emotions. The system processes speech signals and predicts emotions such as happiness, sadness, anger, and more.
+## 🌟 Features
 
-## Features
+- 🎤 Real-time audio recording and playback
+- 📁 Upload support for WAV and MP3 files
+- 🌈 Visual feedback with mel spectrograms
+- 📊 Emotion probability graphs (polar plots)
+- 💻 Modern, responsive interface built with React + Vite
 
-- Real-time audio recording
-- Audio file upload support (WAV, MP3)
-- Visual feedback through mel spectrograms
-- Emotion probability visualization using polar plots
-- Responsive web interface
+---
 
-## Technical Architecture
+## 🧠 How It Works
 
-### Frontend
-- Built with React + Vite
-- File upload handling with react-dropzone
-- Interactive visualizations 
+Voice Vista processes your speech audio by extracting key features and feeding them into a trained Artificial Neural Network (ANN) that predicts emotion labels based on probability scores.
 
-### Backend
-- Flask server
-- Python-based inference engine
-- LibROSA for audio feature extraction 
+---
 
-### Model Architecture
-The emotion recognition model uses an Artificial Neural Network (ANN) with:
-- Input features: MFCCs, Chroma, Spectral Contrast, Zero-Crossing Rate, etc.
-- Multiple dense layers with ReLU activation
-- Softmax output layer for emotion classification
-- Trained on speech emotion recognition datasets
+## 🏗️ Technical Architecture
 
-## Audio Features Extracted
-- Mel-frequency cepstral coefficients (MFCCs)
-- Chromagram
-- Spectral Contrast
-- Zero-Crossing Rate
-- Spectral Centroid
-- Spectral Rolloff
-- RMS Energy
+### 🔹 Frontend
+- ⚛️ React + Vite
+- ⬆️ `react-dropzone` for audio file uploads
 
-## Setup and Installation
+### 🔹 Backend
+- 🌐 Flask for API handling
+- 🐍 Python-based inference engine
+- 🎧 LibROSA for audio feature extraction
+- 🧠 TensorFlow for emotion classification
 
-1. Clone the repository
-2. Install frontend dependencies:
+---
+
+## 🧬 Model Details
+
+The ANN is trained on speech emotion datasets using the following:
+
+- 🎼 **Input Features**:
+  - MFCCs (Mel-frequency cepstral coefficients)
+  - Chromagram
+  - Spectral Contrast
+  - Zero-Crossing Rate
+  - RMS Energy
+  - Spectral Centroid & Rolloff
+
+- 🧱 **Architecture**:
+  - Multiple dense layers (ReLU)
+  - Dropout for regularization
+  - Softmax layer for classification output
+
+---
+
+## 🔊 Extracted Audio Features
+
+| Feature              | Description                                |
+|----------------------|--------------------------------------------|
+| MFCCs                | Capture timbral and phonetic info          |
+| Chromagram           | Pitch content of the signal                |
+| Spectral Contrast    | Difference between spectral peaks/valleys |
+| Zero-Crossing Rate   | Signal frequency content                   |
+| Spectral Centroid    | Brightness of the sound                    |
+| Spectral Rolloff     | High frequency content                     |
+| RMS Energy           | Power of the signal                        |
+
+---
+
+## ⚙️ Setup & Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/manikanta2026/voice-vista
+```
+## ⚙️ Setup & Installation
+
+### 🔧 Install Frontend Dependencies
+```bash
 cd frontend
 npm install
-3. Install backend dependencies:
+```
+
+### 🔧 Install Backend Dependencies
+```bash
 cd backend
 pip install -r requirements.txt
-4. Start the development servers:
-# Frontend
+```
+
+### 🚀 Run the Development Servers
+
+#### Frontend
+```bash
 npm run dev
+```
 
-# Backend
+#### Backend
+```bash
 python app.py
+```
 
-## Environment Variables
-Create a `.env` file in the frontend directory:
+---
+
+## 🌐 Environment Variables
+
+Create a `.env` file in the `frontend` directory and add the following:
+
+```env
 VITE_BACKEND_URL=http://localhost:5000
+```
 
-## Dependencies
+---
+
+## 📦 Dependencies
+
 ### Frontend
-- React
-- Vite
-- Chart.js
-- React Router
-- Axios
+- ⚛️ React  
+- 💨 Tailwind CSS  
+- ⚡ Vite
 
 ### Backend
 - Flask
@@ -76,10 +124,12 @@ VITE_BACKEND_URL=http://localhost:5000
 - TensorFlow
 - LibROSA
 - NumPy
-- Matplotlib  
+- Matplotlib
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## 🤝 Contributing
+
+We welcome all contributions!  
+If you have ideas or improvements, fork the repo and create a pull request. ⭐
 
 ## Authors
 - [Manikanta](https://github.com/manikanta2026)
@@ -88,3 +138,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 - TensorFlow team for the deep learning framework
 - LibROSA team for audio processing capabilities
 - The open-source community for various tools and libraries used in this project
+
