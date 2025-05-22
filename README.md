@@ -69,7 +69,7 @@ The ANN is trained on speech emotion datasets using the following:
 
 ## 🧪 Live Demo
 
-👉 [Try it here](https://emorecweb.onrender.com/)
+👉 [Try it here](https://emorecweb.vercel.app/)
 
 ## ⚙️ Setup & Installation
 
